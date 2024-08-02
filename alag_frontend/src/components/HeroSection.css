@@ -1,0 +1,975 @@
+:root {
+    --white: white;
+    --purple--80: rgba(13, 0, 41, .8);
+    --333: #333;
+    --white-46: rgba(255, 255, 255, .8);
+    --purple--light--purple--light: #f7f4fe;
+    --purple: #6e17ff;
+    --white-90: rgba(255, 255, 255, .9);
+    --white-40: white;
+    --white-50: rgba(255, 255, 255, .5);
+    --white-80: rgba(255, 255, 255, .8);
+}
+
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(70%);
+    /* transform: translateX(); */
+}
+
+.img3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 640px) {
+    .img {
+        transform: translateY(20%);
+    }
+}
+
+/* section */
+.section.is-rel {
+    z-index: 20;
+    position: relative;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+
+.padding-global-v1 {
+    padding-left: 7.75em;
+    padding-right: 7.75em;
+    /* margin-top: 50px; */
+}
+
+.container {
+    width: 100%;
+}
+
+.padding-vertical-60px-60px {
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+}
+
+.notification-bar {
+    background: var(--Text-Linear, linear-gradient(103deg, rgba(255, 255, 255, 0) 56%, #ef8888 98%), linear-gradient(63deg, #f9b5b5 23%, #deadad 60%));
+}
+
+.notification-bar {
+    border-radius: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 3em;
+    display: flex;
+}
+
+.heading-style-h5 {
+    color: #1f2024;
+    font-family: Tasaorbiterdeck Bold, sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 115%;
+}
+
+.popup-open {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: inline-block;
+}
+
+.button {
+    grid-column-gap: .88em;
+    grid-row-gap: .88em;
+    background-color: var(--purple);
+    color: #fff;
+    letter-spacing: .3px;
+    border-radius: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1.5em;
+    font-family: "Tasaorbiterdeck Regular Bf 64891 Cba 23854", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+    display: flex;
+}
+
+.w-button {
+    color: #fff;
+    line-height: inherit;
+    cursor: pointer;
+    background-color: #ec3838;
+    border: 0;
+    border-radius: 0;
+    padding: 9px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.notification-bar {
+    background: var(--Text-Linear, linear-gradient(103deg, rgba(255, 255, 255, 0.00) 56%, #FFCABA 98%), linear-gradient(63deg, #F5D1FF 23%, #FFF 60%));
+}
+
+@media screen and (max-width: 991px) {
+    .notification-bar {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .padding-vertical-60px-60px {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .padding-global-v1 {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .heading-style-h5 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .padding-global-v1,
+    .padding-global-v1.left-no-pad {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padding-vertical-60px-60px {
+        padding-top: 1.88em;
+        padding-bottom: 1.88em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .notification-bar {
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .padding-vertical-60px-60px {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .notification-bar {
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        text-align: center;
+        flex-flow: column;
+        padding: 2em 3em;
+    }
+}
+
+.margin-bottom.is-32px {
+    margin-bottom: 2em;
+}
+
+.margin-bottom {
+    width: 100%;
+    margin: 0;
+}
+
+.heading-block.max-800px {
+    max-width: 72em;
+}
+
+.heading-block {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.max-800px {
+    width: 100%;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.heading-style-h2 {
+    color: rgba(13, 0, 41, .9);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Tasaorbiterdeck Bold, sans-serif;
+    font-size: 2.13em;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+.slider-wrapper {
+    width: 85.5%;
+    max-width: 1536px;
+    /* margin-inline: auto; */
+    position: relative;
+    height: 250px;
+    margin-top: 5rem;
+    overflow: hidden !important;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 5%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@media screen and (min-width: 600px) {
+    .slider-wrapper {
+        width: 85.5%;
+        max-width: 1536px;
+        margin-inline: 40px;
+        position: relative;
+        height: 250px;
+        margin-top: 5rem;
+        overflow: hidden !important;
+        mask-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 1) 5%,
+                rgba(0, 0, 0, 1) 80%,
+                rgba(0, 0, 0, 0));
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .slider-wrapper {
+        width: 85.5%;
+        max-width: 1536px;
+        margin-inline: 45px;
+        position: relative;
+        height: 250px;
+        margin-top: 5rem;
+        overflow: hidden !important;
+        mask-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 1) 5%,
+                rgba(0, 0, 0, 1) 80%,
+                rgba(0, 0, 0, 0));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slider-wrapper {
+        width: 85.5%;
+        max-width: 1536px;
+        margin-inline: auto;
+        position: relative;
+        height: 250px;
+        margin-top: 5rem;
+        overflow: hidden !important;
+        mask-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 1) 5%,
+                rgba(0, 0, 0, 1) 80%,
+                rgba(0, 0, 0, 0));
+    }
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -200px;
+    }
+}
+
+.item {
+    width: 200px;
+    height:240px !important;
+    background-color: rgb(236, 231, 231);
+    border-radius: 6px !important;
+    position: absolute;
+    color: black
+}
+
+.left .item {
+    left: max(calc(200px * 8), 100%);
+    animation: scrollLeft 10s linear infinite;
+}
+
+.left .ite1 {
+    animation-delay: calc((-10s / 8) * 7);
+}
+
+.left .ite2{
+    animation-delay: calc((-10s / 8) * 6);
+}
+
+.left .ite3,
+.right .item3 {
+    animation-delay: calc((-10s / 8) * 5);
+    border-radius: 10px;
+}
+
+.left .ite4,
+.right .item4 {
+    animation-delay: calc((-10s / 8) * 4);
+}
+
+.left .ite5,
+.right .item5 {
+    animation-delay: calc((-10s / 8) * 3);
+}
+
+.left .ite6,
+.right .item6 {
+    animation-delay: calc((-10s / 8) * 2);
+}
+
+.left .ite7,
+.right .item7 {
+    animation-delay: calc((-10s / 8) * 1);
+}
+
+.left .ite8,
+.right .item8 {
+    animation-delay: calc((-10s / 8) * 0);
+}
+
+.profile {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 90px;
+}
+
+.profile img {
+    width: 50px;
+}
+
+.cs-text-16px {
+    font-family: "Tasaorbiterdeck Bf 64891 Cba 48835", sans-serif;
+    font-weight: 600;
+}
+
+
+.company-logo {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.container {
+    width: 100%;
+}
+
+.company-logo img {
+    width: 100px;
+}
+
+.padding-global-v1 {
+    padding-left: 7.75em;
+    padding-right: 7.75em;
+}
+
+.padding-vertical-60px-60px.top-bottom-60pc {
+    padding-top: 3.75em;
+    padding-bottom: 3.75em;
+}
+
+.couse-banner {
+    grid-column-gap: 4em;
+    background-color: var(--purple--light--purple--light);
+    background-image: url("../assets/img/cap-background.webp");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.25em;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5.69em 6.25em;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.cap {
+    width: 100%;
+    max-width: 40em;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.block-new {
+    z-index: 20;
+    flex-flow: column;
+    width: 100%;
+    max-width: 35em;
+    display: flex;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: visible;
+}
+
+.heading-60px {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Tasaorbiterdeck Bold, sans-serif;
+    font-size: 3.13em;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.heading-60px.ffd140 {
+    color: #ffd140;
+}
+
+.heading-60px {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Tasaorbiterdeck Bold, sans-serif;
+    font-size: 3.13em;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.tp-bt-24px {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.custom-32px {
+    color: #fff;
+    font-family: "Tasaorbiterdeck Medium Bf 64891 Cba 192 Ce", sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.button-white {
+    grid-column-gap: .88em;
+    grid-row-gap: .88em;
+    background-color: var(--white);
+    color: #6e17ff;
+    letter-spacing: .3px;
+    border-radius: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    font-family: "Tasaorbiterdeck Bf 64891 Cba 48835", sans-serif;
+    font-size: 1.13em;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+    .padding-global-v1 {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .padding-vertical-60px-60px {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .couse-banner {
+        text-align: center;
+        flex-flow: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cap {
+        max-width: none;
+        display: block;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .heading-60px {
+        font-size: 2.63em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .heading-60px {
+        font-size: 2.63em;
+    }
+
+    .div-block-508 {
+        margin-bottom: 10px;
+    }
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+@media screen and (max-width: 1024px) {
+    .couse-banner {
+        text-align: center;
+        flex-flow: column;
+        padding: 0;
+    }
+
+    .couse-banner {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padding-vertical-60px-60px {
+        padding-top: 1.88em;
+        padding-bottom: 1.88em;
+    }
+
+    .couse-banner {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .couse-banner {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .couse-banner {
+        grid-row-gap: 2em;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .body {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .body {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .heading-60px {
+        font-size: 16px;
+    }
+
+    .custom-32px {
+        font-size: 1em;
+    }
+
+    .div-block-508 {
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 1210px) {
+    .im {
+        transform: translateX(50%);
+    }
+
+}
+
+.margin-bottom {
+    width: 100%;
+    margin: 0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.max-width-large.align-center {
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+}
+
+.max-width-large {
+    width: 100%;
+    max-width: 43.75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-bottom {
+    width: 100%;
+    margin: 0;
+}
+
+.heading-style-h2 {
+    color: rgba(13, 0, 41, .9);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Tasaorbiterdeck Bold, sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 35px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .heading-style-h2 {
+        color: rgba(13, 0, 41, .9);
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Tasaorbiterdeck Bold, sans-serif;
+        font-size: 3em;
+        font-weight: 500;
+        line-height: 60px !important;
+    }
+}
+
+@media screen and (min-width: 567px) {
+    .heading-style-h2 {
+        color: rgba(13, 0, 41, .9);
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: Tasaorbiterdeck Bold, sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+        line-height: 60px !important;
+    }
+}
+
+.margin-top-20px {
+    margin-top: 1.25em;
+}
+
+.text-18px-v1 {
+    color: rgba(0, 0, 0, .7);
+    font-size: 1.13em;
+    line-height: 130%;
+}
+
+@media screen and (max-width: 991px) {
+    .heading-style-h2 {
+        font-size: 2.63em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heading-style-h2 {
+        font-size: 1.63em;
+    }
+}
+
+
+
+
+/* body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(233, 150, 150);
+    font-family: 'Open Sans'
+} */
+#demo {
+    background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%);
+    max-width: 900px;
+    margin: auto;
+}
+
+.carousel-caption {
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        padding: 3rem 2rem;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+    }
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption img {
+        width: 4rem;
+        margin-top: 1rem;
+    }
+}
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    #image-caption {
+        font-size: 0.6rem;
+    }
+}
+
+i {
+    background-color: rgb(223, 56, 89);
+    padding: 1.4rem;
+}
+
+@media (max-width: 767px) {
+    i {
+        padding: 0.8rem;
+    }
+}
+
+.carousel-control-prev {
+    justify-content: flex-start;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: none;
+    opacity: unset;
+}
+
+
+.max-36em {
+    width: 100%;
+    max-width: 36.1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.heading-style-h2 {
+    color: rgba(13, 0, 41, .9);
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Tasaorbiterdeck Bold, sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.slider-wrapper1 {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 250px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -200px;
+    }
+}
+
+.i1 {
+    width: 200px;
+    height: 50px;
+    /* background-color: red; */
+    border-radius: 6px;
+    position: absolute;
+}
+
+.right .i1 {
+    right: max(calc(200px * 8), 100%);
+    animation: scrollRight 10s linear infinite;
+}
+
+
+.right .item1 {
+    animation-delay: calc((-10s / 8) * 7);
+}
+
+.right .item2 {
+    animation-delay: calc((-10s / 8) * 6);
+}
+
+.right .item3 {
+    animation-delay: calc((-10s / 8) * 5);
+}
+
+.right .item4 {
+    animation-delay: calc((-10s / 8) * 4);
+}
+
+.right .item5 {
+    animation-delay: calc((-10s / 8) * 3);
+}
+
+.right .item6 {
+    animation-delay: calc((-10s / 8) * 2);
+}
+
+.right .item7 {
+    animation-delay: calc((-10s / 8) * 1);
+}
+
+.right .item8 {
+    animation-delay: calc((-10s / 8) * 0);
+}
+
+
+
+/* Ensure overflow is hidden to prevent scaling images from overflowing their containers */
+.left-part:hover .overlay,
+.right-part:hover .overlay {
+    overflow: hidden;
+}
+
+.left-part img,
+.right-part img {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Scale the image on hover */
+.left-part:hover img,
+.right-part:hover img {
+    transform: scale(1.5);
+}
+
+/* Ensure the overlay text remains visible during the image scaling */
+.left-part .overlay,
+.right-part .overlay {
+    z-index: 10;
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    background: linear-gradient(217deg, rgba(255, 177, 177, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(46, 49, 46, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(137, 137, 204, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}

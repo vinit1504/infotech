@@ -1,0 +1,145 @@
+.master-class-info {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.master-class-info h1 {
+    color: #3d3d5c;
+    /* Dark purple text color */
+    margin-bottom: 20px;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background-color: #fbfbff;
+    /* Lighter purple background */
+    color: #3d3d5c;
+    /* Dark purple text color */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 600px;
+    /* Flex properties for responsiveness */
+    max-width: 300px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* @media (max-width: 600px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  } */
+.completion-certificate {
+    text-align: center;
+    background-color: #f5f5ff;
+    /* Light purple background */
+    padding: 40px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.completion-certificate h1 {
+    color: #3d3d5c;
+    /* Dark purple text color */
+    margin-bottom: 10px;
+}
+
+.completion-certificate p {
+    color: #7a7a8c;
+    /* Slightly lighter purple text color */
+    margin-bottom: 20px;
+}
+
+.register-button {
+    background-color: #8000ff;
+    /* Purple button color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #6a00cc;
+    /* Darker purple on hover */
+}
+
+
+
+
+.refer-earn-community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: '#fff';
+    /* Lighter purple background */
+    color: #3d3d5c;
+    /* Dark purple text color */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* flex: 1 1 300px; */
+    /* Flex properties for responsiveness */
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width: 1024px) {
+   .card{
+    flex-direction: column;
+    padding: 20px;
+   }
+   .re1{
+    display: flex;
+    justify-content: center;
+   }
+}
+

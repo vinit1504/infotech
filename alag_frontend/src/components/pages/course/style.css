@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.img1 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .img1a {
+    position: absolute;
+    width: 180px;
+    top: -0%;
+    left: -20%;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .img2a {
+    position: absolute;
+    width: 150px;
+    top: -60%;
+    right: 0%;
+    transform: translateY(-150%);
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: -5;
+  }
+  
+  @media (max-width: 1410px) {
+    .img1a {
+      left: -11%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .img1a {
+      left: -4%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .img1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img1a {
+      width: 100px;
+      top: -60%;
+      left: -5%;
+      z-index: -5;
+    }
+  
+    .img2a {
+      width: 80px;
+      right: -1%;
+      z-index: -5;
+      transform: translateY(-100%);
+    }
+  }
+  
+  @media (max-width: 448px) {
+    .img1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img1a {
+      width: 80px;
+      left: -11%;
+      z-index: -5;
+      transform: translateY(-350%);
+    }
+  
+    .img2a {
+      width: 60px;
+      right: 5%;
+      z-index: -5;
+      transform: translateY(-200%);
+    }
+  
+    .header {
+      transform: translateY(-10%);
+    }
+  }
+  
+  /* Ensure overflow is hidden to prevent scaling images from overflowing their containers */
+.left-part:hover .overlay, .right-part:hover .overlay {
+    overflow: hidden;
+}
+
+.left-part .img, .right-part .img {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Scale the image on hover */
+.left-part:hover .img, .right-part:hover .img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* Ensure the overlay text remains visible during the image scaling */
+.left-part .overlay, .right-part .overlay {
+    z-index: 10;
+}

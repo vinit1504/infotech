@@ -1,0 +1,24 @@
+@keyframes stickyHeader {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    animation: stickyHeader 0.5s ease forwards;
+}
+
+.show {
+    background-color: #020c1b;
+}
+.top {
+    background: rgba(222, 218, 218, 0.25);
+    backdrop-filter: blur(100.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+}
